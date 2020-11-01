@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Dropzone from "../dropzone/Dropzone";
-import "./Upload.css";
-import Progress from "../progress/Progress";
+import Dropzone from "../dropzone/dropzone";
+import "./upload.css";
+import Progress from "../progress/progress";
 
 class Upload extends Component {
   constructor(props) {
