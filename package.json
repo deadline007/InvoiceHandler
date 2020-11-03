@@ -2,9 +2,13 @@
   "name": "invoicehandler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "frontend": "npm start --prefix frontend",
+    "frontendinstall": "npm install --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "repository": {
     "type": "git",
@@ -17,8 +21,10 @@
   },
   "homepage": "https://github.com/deadline007/InvoiceHandler#readme",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "formidable": "^1.2.2"
+    "formidable": "^1.2.2",
+    "nodemon": "^2.0.6"
   }
 }
