@@ -4,6 +4,7 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
+    "predeploy" "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "frontend": "npm start --prefix frontend",
